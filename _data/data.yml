@@ -63,8 +63,8 @@ education:
         Thesis in Data Mining titled: Synthesis of an algorithm autoencoder based for the classification of remote sensed optical earth data
 experiences:
     - role: Apprenticeship
-      time: 2015 - Present
-      company: March 2022 -- June 2022
+      time: March 2022 -- June 2022
+      company: CILAB Research Lab 
       details: |
         Analysis and development of Computer Vision techniques for Weed Mapping, in the context of Precision Agriculture from multispectral drone imagery
     - role: Apprenticeship
