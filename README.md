@@ -1,2 +1,2 @@
-This project is the repo of the portfolio [pasqualedem.github.io](pasqualedem.github.io).
+This project is the repo of the portfolio https://pasqualedem.github.io
 
