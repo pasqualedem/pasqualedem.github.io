@@ -1,0 +1,20 @@
+@import './custom.scss';
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css");
+
+.navicon {
+    font-size: 2rem;
+    margin-right: 20px;
+    margin-left: 20px;
+}
+
+.darkItem {
+    color: $dark
+}
+
+.lightItem {
+    color: white
+}
+
+.email {
+    font-size: 1rem;
+}
