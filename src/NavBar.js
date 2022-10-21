@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
+import Button from 'react-bootstrap/Button'
 
 import './NavBar.scss'
 
@@ -12,7 +13,7 @@ const socials = [
   {'name': "github"   , 'link': "https://github.com/pasqualedem"},
   {'name': "twitter"  , 'link': "https://twitter.com/MarinisPasquale"}
 ]
-
+const pdf = "https://drive.google.com/file/d/1bL-6Ig5QtOLQ8Jl6wFjCPSo3GV0XM5kJ/view?usp=sharing"
 
 export default function NavBar() {
 const [color, setColor] = useState(true)
@@ -38,6 +39,9 @@ const [color, setColor] = useState(true)
           { socials.map( social => {
             return <Nav.Link href={social.link} className="border-left pl-2 ml-auto"><i class={"bi-" + social.name + " navicon"} ></i></Nav.Link>
           })}
+            <Nav className="mc-auto" variant='pills'>
+            <Nav.Link href={pdf}><span class={color ? "lightItem" : 'darkItem'}><Button variant={color ? "light" : 'dark'}>PDF CV</Button></span></Nav.Link>
+          </Nav>
         </Navbar.Collapse>
       </Container>
     </Navbar>
