@@ -12,7 +12,7 @@ import './AboutMe.css';
 
 export default function AboutMe() {
 
-  const description = "I'm a computer scientist and AI expert."
+  const description = "Currently PhD student in Computer Science and Mathematics at University of Bari 'Aldo Moro'"
 
   const education = [
       {
