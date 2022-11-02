@@ -7,7 +7,7 @@ import "./bg.scss";
 import { useState, useEffect } from "react";
 
 function App() {
-  const [mode, setMode] = useState('light')
+  const [, setMode] = useState('light')
 
   const onSelectMode = (mode) => {
     setMode(mode)

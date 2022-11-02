@@ -16,7 +16,7 @@ const socials = [
 const pdf = "https://drive.google.com/file/d/1bL-6Ig5QtOLQ8Jl6wFjCPSo3GV0XM5kJ/view?usp=sharing"
 
 export default function NavBar() {
-const [color, setColor] = useState(true)
+const [color] = useState(true)
 //   const changeColor = () => {
 //     if (window.scrollY >= 70) {
 //       setColor(true)
