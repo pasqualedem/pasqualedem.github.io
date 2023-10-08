@@ -1,6 +1,6 @@
 ---
 title: Pasquale De Marinis
-role: PhD Student at Computational Intelligence Group
+role: PhD Student at Computational Intelligence Lab
 bio: ""
 interests:
   - Artificial Intelligence
@@ -48,7 +48,7 @@ status:
 last_name: De Marinis
 highlight_name: true
 first_name: Pasquale
-email: ""
+email: "pasquale.demarinis@uniba.it"
 ---
 
 Pasquale De Marinis is a PhD student in Computer Science and Mathematics at University of Bari 'Aldo Moro' working with the [Computational Intelligence Group](http://cilab.di.uniba.it). He's research interest is about Drone Vision and its application in sustainable AI such as Precision Agriculture.
