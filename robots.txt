@@ -1,3 +1,3 @@
-# https://www.robotstxt.org/robotstxt.html
 User-agent: *
-Disallow:
+
+Sitemap: https://pasqualedem.github.io/sitemap.xml
