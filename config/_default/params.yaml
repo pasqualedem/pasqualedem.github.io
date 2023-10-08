@@ -104,7 +104,7 @@ features:
 
 extensions:
   cms:
-    branch: hugo
+    branch: main
     local_backend: false
   academicons:
     enable: true
