@@ -10,10 +10,10 @@ authors:
   - Gennaro Vessio
 
 # date: '2013-07-01T00:00:00Z'
-doi: ''
+doi: '10.15439/2023F960'
 
 # Schedule page publish date (NOT publication's date).
-# publishDate: '2017-01-01T00:00:00Z'
+publishDate: '2023-09-19T00:00:00Z'
 
 # Publication type.
 # Accepts a single type but formatted as a YAML list (for Hugo requirements).

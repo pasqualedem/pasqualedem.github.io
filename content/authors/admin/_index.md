@@ -19,7 +19,7 @@ social:
       header: true
   - icon: graduation-cap
     icon_pack: fas
-    link: https://scholar.google.co.uk/citations?user=sIwtMXoAAAAJ
+    link: https://scholar.google.com/citations?hl=it&authuser=2&user=F7tOSFUAAAAJ
   - icon: github
     icon_pack: fab
     link: https://github.com/pasqualedem
