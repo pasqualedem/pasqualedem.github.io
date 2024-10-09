@@ -6,17 +6,17 @@ email: pasquale.demarinis (at) uniba.it
 
 # Search Engine Optimization (SEO)
 # The following information is used to improve the website traffic from search engines, e.g., Google.
-keywords: minimal light
-description: The Minimal Light is a simple and elegant jekyll theme for academic personal homepage.
+keywords: computer vision deep learning drone uav image processing
+description: Pasquale De Marinis is a Ph.D. student at the University of Bari Aldo Moro. His research interests include computer vision, deep learning, and image processing for drones.
 canonical: https://minimal-light-theme.yliu.me/
 
 # Links 
 # If you don't need one of them, you may delete the corresponding line.
-google_scholar: https://scholar.google.com/
-cv_link: assets/files/curriculum_vitae.pdf
-github_link: https://github.com/
-linkedin: https://www.linkedin.com/
-twitter: https://twitter.com/
+google_scholar: https://scholar.google.com/citations?hl=it&authuser=2&user=F7tOSFUAAAAJ
+cv_link: https://drive.google.com/file/d/1bL-6Ig5QtOLQ8Jl6wFjCPSo3GV0XM5kJ/view?usp=sharing
+github_link: https://github.com/pasqualedem
+linkedin: https://www.linkedin.com/in/pasqualedemarinis
+# twitter: https://twitter.com/
 
 # Images (e.g., your profile picture and your website's favicon) 
 # "favicon" and "favicon_dark" are used for the light and dark modes, respectively. 
@@ -34,7 +34,7 @@ auto_dark_mode: true
 
 # Font
 # You can use this option to choose between Serif or Sans Serif fonts.
-font: "Serif" # or "Sans Serif"
+font: "Sans Serif" # or "Sans Serif"
 
 # Google Analytics ID
 # Please remove this if you don't use Google Analytics

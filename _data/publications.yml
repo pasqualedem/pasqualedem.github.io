@@ -1,22 +1,44 @@
 main:
 
-  - title: Continual Learning for Abdominal Multi-Organ and Tumor Segmentation
-    authors: Yixiao Zhang, Xinyi Li, Huimiao Chen, Alan Yuille, <strong>Yaoyao Liu*</strong>, Zongwei Zhou* (*Corresponding authors)
-    conference_short: MICCAI
-    conference: International Conference on Medical Image Computing and Computer-Assisted Intervention <strong>(MICCAI)</strong>, 2023.
-    pdf: https://arxiv.org/pdf/2306.00988.pdf
-    code: https://github.com/MrGiovanni/ContinualLearning
-    bibtex: https://bib.yliu.me/MICCAI23.txt
-    image: ./assets/img/teaser_example_2.png
-    notes: Early Accept
+  - title: "RoWeeder: Unsupervised Weed Mapping through Crop-Row Detection"
+    authors: <strong>Pasquale De Marinis*</strong>, Gennaro Vessio, Giovanna Castellano 
+    conference_short: ECCV2024
+    conference: European Conference on Computer Vision <strong>(ECCV)</strong>, 2024.
+    pdf: https://arxiv.org/pdf/2410.04983
+    code: https://github.com/pasqualedem/roweeder
+    # bibtex: https://bib.yliu.me/MICCAI23.txt 
+    image: https://raw.githubusercontent.com/pasqualedem/RoWeeder/refs/heads/main/res/method.svg
+    notes: In Press
 
-  - title: "Mnemonics Training: Multi-Class Incremental Learning without Forgetting"
-    authors: <strong>Yaoyao Liu</strong>, Yuting Su, An-An Liu, Bernt Schiele, Qianru Sun
-    conference_short: CVPR
-    conference: IEEE/CVF Conference on Computer Vision and Pattern Recognition <strong>(CVPR)</strong>, 2020.
-    pdf: https://arxiv.org/pdf/2002.10211.pdf
+  - title: "Label Anything: Multi-Class Few-Shot Semantic Segmentation with Visual Prompts"
+    authors: <strong>Pasquale De Marinis*</strong>, Nicola Fanelli, Raffaele Scaringi, Emanuele Colonna, Giuseppe Fiameni, Gennaro Vessio, Giovanna Castellano
+    conference_short: arXiv
+    # conference: IEEE/CVF Conference on Computer Vision and Pattern Recognition <strong>(CVPR)</strong>, 2020.
+    pdf: https://arxiv.org/pdf/2407.02075
     code: https://github.com/yaoyao-liu/class-incremental-learning/tree/main/mnemonics-training
-    page: https://class-il.mpi-inf.mpg.de/mnemonics/
-    bibtex: https://class-il.mpi-inf.mpg.de/mnemonics/
-    notes: Oral Presentation
-    image: ./assets/img/teaser_example.png
+    # page: https://class-il.mpi-inf.mpg.de/mnemonics/
+    # bibtex: https://class-il.mpi-inf.mpg.de/mnemonics/
+    # notes: Oral Presentation
+    image: ./assets/img/la.png
+
+  - title: "Weed mapping in multispectral drone imagery using lightweight vision transformers"
+    authors: Giovanna Castellano, <strong>Pasquale De Marinis*</strong>, Gennaro Vessio
+    conference_short: Neurocomputing
+    # conference: Journal Publication
+    pdf: https://www.sciencedirect.com/science/article/pii/S0925231223010378/pdfft?md5=3071db71b79da60a24788c6f1e60d6d7&pid=1-s2.0-S0925231223010378-main.pdf
+    code: https://github.com/pasqualedem/LWViTs-for-weedmapping
+    page: https://www.sciencedirect.com/science/article/pii/S0925231223010378
+    # bibtex: https://www.sciencedirect.com/science/article/pii/S0925231223010378
+    # notes: Publication Date: 2023-10-10
+    image: ./assets/img/lweed.jpg  # Assuming the image is named featured.jpg in the assets/img directory
+
+  - title: 'Applying Knowledge Distillation to Improve Weed Mapping With Drones'
+    authors: Giovanna Castellano, <strong>Pasquale De Marinis*</strong>, Gennaro Vessio
+    conference_short: FEDCSIS
+    conference: 18th Conference on Computer Science and Intelligence Systems
+    pdf: https://annals-csis.org/proceedings/2023/pliks/960.pdf
+    code: https://github.com/pasqualedem/KD-for-WeedMapping
+    # page: 
+    # bibtex: 
+    # notes: Publication Date: 2023-09-19
+    image: ./assets/img/kweed.jpg 
