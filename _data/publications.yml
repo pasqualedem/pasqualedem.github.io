@@ -1,25 +1,28 @@
 main:
 
-  - title: "RoWeeder: Unsupervised Weed Mapping through Crop-Row Detection"
-    authors: <strong>Pasquale De Marinis*</strong>, Gennaro Vessio, Giovanna Castellano 
-    conference_short: ECCV2024
-    conference: European Conference on Computer Vision <strong>(ECCV)</strong>, 2024.
-    pdf: https://arxiv.org/pdf/2410.04983
-    code: https://github.com/pasqualedem/roweeder
-    # bibtex: https://bib.yliu.me/MICCAI23.txt 
-    image: https://raw.githubusercontent.com/pasqualedem/RoWeeder/refs/heads/main/res/method.svg
-    notes: In Press
-
   - title: "Label Anything: Multi-Class Few-Shot Semantic Segmentation with Visual Prompts"
     authors: <strong>Pasquale De Marinis*</strong>, Nicola Fanelli, Raffaele Scaringi, Emanuele Colonna, Giuseppe Fiameni, Gennaro Vessio, Giovanna Castellano
-    conference_short: arXiv
+    conference: European Conference on Artificial Intelligence <strong>(ECAI)</strong>, 2025.
+    conference_short: ECAI2025
     # conference: IEEE/CVF Conference on Computer Vision and Pattern Recognition <strong>(CVPR)</strong>, 2020.
+    page: https://pasqualedem.github.io/LabelAnything
     pdf: https://arxiv.org/pdf/2407.02075
     code: https://github.com/pasqualedem/LabelAnything
     # page: https://class-il.mpi-inf.mpg.de/mnemonics/
     # bibtex: https://class-il.mpi-inf.mpg.de/mnemonics/
     # notes: Oral Presentation
     image: ./assets/img/la.png
+    notes: In Press
+
+  - title: "RoWeeder: Unsupervised Weed Mapping through Crop-Row Detection"
+    authors: <strong>Pasquale De Marinis*</strong>, Gennaro Vessio, Giovanna Castellano 
+    conference_short: ECCV2024
+    conference: European Conference on Computer Vision <strong>(ECCV)</strong>, 2024.
+    pdf: https://arxiv.org/pdf/2410.04983
+    page: https://link.springer.com/chapter/10.1007/978-3-031-91835-3_9
+    code: https://github.com/pasqualedem/roweeder
+    # bibtex: https://bib.yliu.me/MICCAI23.txt 
+    image: https://raw.githubusercontent.com/pasqualedem/RoWeeder/refs/heads/main/res/method.svg
 
   - title: "Weed mapping in multispectral drone imagery using lightweight vision transformers"
     authors: Giovanna Castellano, <strong>Pasquale De Marinis*</strong>, Gennaro Vessio
@@ -37,6 +40,7 @@ main:
     conference_short: FEDCSIS
     conference: 18th Conference on Computer Science and Intelligence Systems
     pdf: https://annals-csis.org/proceedings/2023/pliks/960.pdf
+    page: https://annals-csis.org/proceedings/2023/pliks/960.pdf
     code: https://github.com/pasqualedem/KD-for-WeedMapping
     # page: 
     # bibtex: 
