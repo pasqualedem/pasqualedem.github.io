@@ -4,45 +4,51 @@ main:
     authors: <strong>Pasquale De Marinis*</strong>, Nicola Fanelli, Raffaele Scaringi, Emanuele Colonna, Giuseppe Fiameni, Gennaro Vessio, Giovanna Castellano
     conference: European Conference on Artificial Intelligence <strong>(ECAI)</strong>, 2025.
     conference_short: ECAI2025
-    # conference: IEEE/CVF Conference on Computer Vision and Pattern Recognition <strong>(CVPR)</strong>, 2020.
-    page: https://pasqualedem.github.io/LabelAnything
     pdf: https://arxiv.org/pdf/2407.02075
     code: https://github.com/pasqualedem/LabelAnything
-    # page: https://class-il.mpi-inf.mpg.de/mnemonics/
+    page: https://pasqualedem.github.io/LabelAnything
     # bibtex: https://class-il.mpi-inf.mpg.de/mnemonics/
     # notes: Oral Presentation
     image: ./assets/img/la.png
-    notes: In Press
+    abstract: >
+      We introduce Label Anything, a transformer-based framework for multi-prompt, multi-way few-shot semantic segmentation. Our model unifies diverse visual prompts—points, boxes, and masks—into a single, flexible architecture that generalizes across tasks while reducing annotation effort. Evaluated on the COCO-20i benchmark, it achieves state-of-the-art performance and demonstrates strong multi-class segmentation capabilities.
 
   - title: "RoWeeder: Unsupervised Weed Mapping through Crop-Row Detection"
     authors: <strong>Pasquale De Marinis*</strong>, Gennaro Vessio, Giovanna Castellano 
-    conference_short: ECCV2024
-    conference: European Conference on Computer Vision <strong>(ECCV)</strong>, 2024.
+    conference_short: ECCVW2024
+    conference: European Conference on Computer Vision Workshops <strong>(ECCVW)</strong>, 2024.
     pdf: https://arxiv.org/pdf/2410.04983
-    page: https://link.springer.com/chapter/10.1007/978-3-031-91835-3_9
     code: https://github.com/pasqualedem/roweeder
+    page: https://link.springer.com/chapter/10.1007/978-3-031-91835-3_9
     # bibtex: https://bib.yliu.me/MICCAI23.txt 
-    image: https://raw.githubusercontent.com/pasqualedem/RoWeeder/refs/heads/main/res/method.svg
+    image: ./assets/img/roweeder.svg
+    abstract: >
+      We present RoWeeder, an unsupervised framework for weed mapping that integrates crop-row detection with a noise-resilient deep learning model. By generating pseudo-ground truth from crop-row geometry, our lightweight network learns to distinguish crops from weeds under noisy conditions. Evaluated on the WeedMap dataset, RoWeeder surpasses existing baselines and enables real-time, drone-based weed monitoring for precision agriculture.
 
   - title: "Weed mapping in multispectral drone imagery using lightweight vision transformers"
     authors: Giovanna Castellano, <strong>Pasquale De Marinis*</strong>, Gennaro Vessio
     conference_short: Neurocomputing
-    # conference: Journal Publication
+    conference: Neurocomputing
     pdf: https://www.sciencedirect.com/science/article/pii/S0925231223010378/pdfft?md5=3071db71b79da60a24788c6f1e60d6d7&pid=1-s2.0-S0925231223010378-main.pdf
     code: https://github.com/pasqualedem/LWViTs-for-weedmapping
     page: https://www.sciencedirect.com/science/article/pii/S0925231223010378
     # bibtex: https://www.sciencedirect.com/science/article/pii/S0925231223010378
     # notes: Publication Date: 2023-10-10
-    image: ./assets/img/lweed.jpg  # Assuming the image is named featured.jpg in the assets/img directory
+    image: ./assets/img/lweed.png  # Assuming the image is named featured.jpg in the assets/img directory
+    abstract: >
+      We introduce a lightweight Vision Transformer for drone-based multispectral weed mapping in precision agriculture. The model transfers knowledge from RGB pretraining to multispectral data, achieving state-of-the-art results on the WeedMap dataset and enabling efficient, non-invasive weed detection for targeted herbicide management.
 
   - title: 'Applying Knowledge Distillation to Improve Weed Mapping With Drones'
     authors: Giovanna Castellano, <strong>Pasquale De Marinis*</strong>, Gennaro Vessio
     conference_short: FEDCSIS
     conference: 18th Conference on Computer Science and Intelligence Systems
     pdf: https://annals-csis.org/proceedings/2023/pliks/960.pdf
-    page: https://annals-csis.org/proceedings/2023/pliks/960.pdf
     code: https://github.com/pasqualedem/KD-for-WeedMapping
+    page: https://annals-csis.org/proceedings/2023/pliks/960.pdf
     # page: 
     # bibtex: 
     # notes: Publication Date: 2023-09-19
     image: ./assets/img/kweed.jpg 
+    abstract: >
+      Our approach employs state-of-the-art knowledge distillation to transfer performance from a large teacher network to a compact student model, achieving high accuracy on the WeedMap dataset with a fraction of the computation. The method enables efficient, drone-deployable weed detection for sustainable precision agriculture.
+    notes: Best Distinction Paper Award

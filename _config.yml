@@ -2,13 +2,13 @@
 title: Pasquale De Marinis
 position: Ph.D. Student
 affiliation: University of Bari Aldo Moro
-email: pasquale.demarinis (at) uniba.it
+email: pasquale.demarinis@uniba.it
 
 # Search Engine Optimization (SEO)
 # The following information is used to improve the website traffic from search engines, e.g., Google.
 keywords: computer vision deep learning drone uav image processing
 description: Pasquale De Marinis is a Ph.D. student at the University of Bari Aldo Moro. His research interests include computer vision, deep learning, and image processing for drones.
-canonical: https://minimal-light-theme.yliu.me/
+canonical: https://pasqualedem.github.io/
 
 # Links 
 # If you don't need one of them, you may delete the corresponding line.
@@ -30,7 +30,7 @@ enable_footnote: true
 
 # Auto Dark Mode
 # You may use the option to disable the automatic dark theme
-auto_dark_mode: true
+auto_dark_mode: false
 
 # Font
 # You can use this option to choose between Serif or Sans Serif fonts.

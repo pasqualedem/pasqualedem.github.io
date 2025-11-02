@@ -2,28 +2,27 @@
 layout: homepage
 ---
 
-## About Me
+<div class="intro" markdown="1">
 
-I am a Ph.D. student at the [Computational Intelligence Lab](http://cilab.di.uniba.it).
+## About me
 
-## Research Interests
+I am a Ph.D. student in Computer Science at the [Computational Intelligence Lab (CILAB)](http://cilab.di.uniba.it), University of Bari Aldo Moro. 
 
-- **Computer Vision:** Semantic segmentation, Instance segmentation, Object detection
-- **Deep Learning:** Few-shot learning, Transfer learning
-- **Precision Agriculture:** Weed Mapping, Drone-based sensing
+My research focuses on data-efficient and explainable deep learning for computer vision, with applications in large-scale and real-world visual understanding. 
 
-## News
-- **[September 2025]** I chaired the workshop ["Advances in Drone Vision"](https://cilabuniba.github.io/adv2025/) at ICIAP 2025.
-- **[August 2025]** We received the ["Outstanding Paper Award"](https://www.ifsa-nafips2025.org/) at IFSA-NAFIPS 2025 for our paper "Explainable Fuzzy GNNs for Leak Detection in Water Distribution Networks".
-- **[July 2025]** Our Paper "Label Anything: Multi-Class Few-Shot Semantic Segmentation with Visual Prompts" has been accepted to ECAI 2025.
-- **[May 2025]** We are organizing the workshop ["International Workshop on Advances in Drone Vision"](https://cilabuniba.github.io/adv2025/) at ICIAP 2025.
-- **[September 2024]** I started my visit at the Jheronimus Academy of Data Science (JADS) in 's-Hertogenbosch, Netherlands.
-- **[August 2024]** Our Paper "RoWeeder: Unsupervised Weed Mapping through Crop-Row Detection" has been accepted to CVPPA at ECCV 2024.
-- **[October 2023]** Our Paper "Weed mapping in multispectral drone imagery using lightweight vision transformers" has been accepted to Neurocomputing.
-- **[September 2023]** I received the [Best Distinction Paper Award](https://fedcsis.org/resources/reports/FedCSIS_2023_raport_en.pdf) at FEDCSIS 2023.
-- **[July 2023]** I participated to DeepLearn Summer School 2023 in Gran Canaria, Spain.
-- **[April 2023]** I participated as student volunteer to DeepLearn Spring 2023 in Bari, Italy.
+I am currently working on few-shot semantic segmentation and edge AI methods developed in collaboration with the Jheronimus Academy of Data Science (Netherlands).
 
-{% include_relative _includes/publications.md %}
+## Research interests
 
-<!-- {% include_relative _includes/services.md %} -->
+- **Computer Vision:** Semantic segmentation, Scene understanding, Object detection  
+- **Machine Learning:** Few-shot learning, Transfer learning, Explainable AI  
+- **Applied AI:** Edge intelligence, Efficient deep architectures, Sustainable computing
+
+
+</div>
+
+<div class="full-bleed" markdown="1">
+{% include news.md %}
+{% include publications.md %}
+<!-- {% include services.md %} -->
+</div>

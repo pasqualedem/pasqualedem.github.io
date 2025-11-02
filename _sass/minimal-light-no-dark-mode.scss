@@ -81,10 +81,17 @@
 .github span{
   background-color:#000}
 
-email {
-    font-size: 14px;
-    font-family: "Ubuntu Mono";
+.email {
+  font-family: "Ubuntu Mono", monospace;
+  font-size: 14px;
+  color: var(--global-theme-color, #002D72);
+  text-decoration: none;
 }
+
+.email:hover {
+  text-decoration: underline;
+}
+
 
 .icon-button i{
   background:none;
@@ -213,12 +220,12 @@ h1 {
 }
 
 a {
-  color:#39c;
-  text-decoration:none;
+  color: #0056b3;          /* deeper, saturated blue */
+  text-decoration: none;
 }
 
 a:hover {
-  color:#069;
+  color: #003d80;          /* darker hover state for clear contrast */
 }
 
 a small {
@@ -516,3 +523,76 @@ footer {
   display:none;
   font-family: monospace;
 }
+/* === Desktop layout: wider left column for image & name (fluid) === */
+@media screen and (min-width: 961px) {
+  .wrapper {
+    display: grid;
+    grid-template-columns: 400px 1fr;     /* wider first column */
+    gap: 24px;                            /* tighter gap */
+    width: min(95%, 960px);               /* fluid width, capped at 960px */
+    margin: 0 auto;
+    grid-auto-rows: auto;
+  }
+
+  /* Promote section children into the grid (intro row 1, full-bleed row 2) */
+  section { display: contents; }
+
+  header {
+    position: static !important;
+    float: none !important;
+    grid-column: 1;
+    grid-row: 1;
+    width: 100% !important;               /* override legacy 232px */
+    text-align: center;
+    padding-top: 4.0em;
+  }
+
+  .intro {
+    grid-column: 2;
+    grid-row: 1;
+    padding-top: 4.0em;
+  }
+
+  .full-bleed {
+    grid-column: 1 / -1;
+    grid-row: 2;
+  }
+
+  footer {
+    position: static;
+    grid-column: 1 / -1;
+    text-align: center;
+    margin-top: 24px;
+  }
+
+  /* Avatar sizing */
+  .image.avatar img {
+    width: 220px;            /* tweak: 200–240px */
+    max-width: 100%;
+    padding: 20px;
+    border-radius: 100%;
+  }
+
+  /* Keep long names on one line */
+  header h1 { white-space: nowrap; }
+
+  /* Safety: avoid overflow/clipping just before breakpoint */
+  header, section, footer { max-width: 100%; overflow: visible; }
+  img, pre { max-width: 100%; }
+}
+
+/* === Intermediate desktop softening (shrinks sidebar a bit before mobile) === */
+@media screen and (max-width: 1024px) and (min-width: 961px) {
+  .wrapper {
+    grid-template-columns: 360px 1fr;     /* gently narrow the sidebar */
+    gap: 20px;                            /* slightly tighter gap */
+  }
+  .image.avatar img { width: 200px; }     /* scale avatar accordingly */
+}
+
+/* === Mobile/tablet: revert to single-column flow === */
+@media print, screen and (max-width: 960px) {
+  section { display: block; }
+  .full-bleed { grid-column: auto; grid-row: auto; }
+}
+

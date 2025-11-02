@@ -56,9 +56,47 @@ blockquote { background: var(--global-bg-color); border-left: 2px solid var(--gl
 
 .publications ol.bibliography li .author > em { border-bottom: 1px solid; font-style: normal; }
 
-.publications ol.bibliography li .links a.btn { color: #000000; border: 1px solid #000000; padding-left: 0.5rem; padding-right: 0.5rem; padding-top: 0.1rem; padding-bottom: 0.1rem; }
+/* === Base compact button (neutral, variable-driven) === */
+.publications ol.bibliography li .links .btn {
+  --btn-color: var(--global-theme-color, #002D72);
+  --btn-bg: #fff;
+  --btn-border: var(--btn-color);
 
-.publications ol.bibliography li .links a.btn:hover { color: var(--global-theme-color); border-color: var(--global-theme-color); }
+  display: inline-block;
+  font-size: 0.8rem;
+  font-weight: 500;
+  padding: 2px 8px;
+  margin: 2px 4px 2px 0;
+  border-radius: 4px;
+  line-height: 1.2;
+  text-decoration: none;
+
+  color: var(--btn-color);
+  background: var(--btn-bg);
+  border: 1px solid var(--btn-border);
+
+  transition: background-color .2s, color .2s, border-color .2s, box-shadow .2s;
+}
+
+/* Hover uses the same variable */
+.publications ol.bibliography li .links .btn:hover {
+  background: var(--btn-color);
+  color: #fff;
+  border-color: var(--btn-color);
+  box-shadow: 0 1px 3px rgba(0,0,0,.15);
+}
+
+/* === Variants just set the variable (no specificity fight) === */
+.publications ol.bibliography li .links .btn--pdf    { --btn-color: #b00020; }
+.publications ol.bibliography li .links .btn--code   { --btn-color: #1b5e20; }
+.publications ol.bibliography li .links .btn--project{ --btn-color: var(--global-theme-color, #002D72); }
+.publications ol.bibliography li .links .btn--bibtex { --btn-color: #424242; }
+
+/* Focus ring */
+.publications ol.bibliography li .links .btn:focus {
+  outline: none;
+  box-shadow: 0 0 0 2px rgba(0,45,114,.15);
+}
 
 .publications ol.bibliography li .hidden { font-size: 0.875rem; max-height: 0px; overflow: hidden; text-align: justify; -webkit-transition: 0.15s ease; -moz-transition: 0.15s ease; -ms-transition: 0.15s ease; -o-transition: 0.15s ease; transition: all 0.15s ease; }
 
@@ -72,4 +110,99 @@ blockquote { background: var(--global-bg-color); border-left: 2px solid var(--gl
 
 .publications ol.bibliography li div.abstract.hidden.open { border-color: var(--global-text-color); }
 
-.publications ol.bibliography li .teaser { border-radius: 8px; box-shadow: 3px 3px 6px #888; height: 123px; width: 270px; margin-top: 5px; margin-left: 5px; margin-bottom: 5px; object-fit: cover; }
+/* --- Publication teaser image: clean box frame, no shadow --- */
+.publications ol.bibliography li .teaser {
+  display: block;
+  width: 100%;
+  max-width: 600px;
+  height: auto;
+  aspect-ratio: 16 / 9;        /* keeps a consistent shape, adjust if needed */
+  object-fit: contain;          /* show entire image */
+  background-color: #ffffff;    /* neutral background */
+  border: 1px solid #e5e5e5;    /* subtle frame instead of shadow */
+  border-radius: 8px;
+  margin: 5px auto;             /* center within its column */
+}
+
+/* The left “abbr” column was constraining/clipping height */
+.publications ol.bibliography li .abbr {
+  height: auto;           /* was 8rem; remove to avoid clipping */
+  overflow: visible;      /* ensure no cutoffs */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 5px 15px;
+}
+
+/* --- Short abstract block under publication links --- */
+.publications ol.bibliography li .abstract-short {
+  margin-top: 6px;
+  font-size: 0.8rem;
+  line-height: 1.4;
+  color: #333;                     /* readable on light background */
+  background-color: #f8f9fa;       /* subtle distinction */
+  border-left: 3px solid var(--global-theme-color);
+  padding: 8px 10px;
+  border-radius: 4px;
+}
+
+.publications ol.bibliography li .periodical {
+  margin-bottom: 0.4em;
+}
+
+/* === Mobile publications: card-style entries === */
+@media print, screen and (max-width: 600px) {
+  .publications ol.bibliography {
+    gap: 0;
+  }
+
+  .publications ol.bibliography li {
+    background: #ffffff;
+    border: 1px solid #e5e5e5;
+    border-radius: 10px;
+    padding: 12px 14px 14px;
+    margin-bottom: 14px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.06);
+  }
+
+  /* stack: Title → Image → rest */
+  .pub-row {
+    display: flex;
+    flex-direction: column;
+  }
+  .pub-row .col-sm-9 { order: 1; width: 100%; padding: 0 !important; }
+  .pub-row .abbr     { order: 2; width: 100%; padding: 0 !important; }
+
+  /* image container as positioning context */
+  .publications ol.bibliography li .abbr {
+    position: relative;
+    margin: 8px 0 4px;
+    text-align: center;
+  }
+
+  /* image is now flat inside the card, no extra shadow needed */
+  .publications ol.bibliography li .teaser {
+    border: none;
+    background: none;
+    aspect-ratio: auto;
+    max-width: none;
+    width: 100%;
+    height: auto;
+  }
+
+  /* keep the badge on top-left of the image */
+  .publications ol.bibliography li .abbr abbr {
+    position: absolute !important;
+    top: 6px;
+    left: 10px;
+    z-index: 2;
+  }
+
+  /* tiny spacing under conference line */
+  .publications ol.bibliography li .periodical {
+    margin-bottom: 6px;
+  }
+}
+
+
+
