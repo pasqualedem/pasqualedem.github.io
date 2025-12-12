@@ -1,4 +1,5 @@
 ## News
+- **[December 2025]** New preprint on Few-Shot Segmentation: "DistillFSS: Synthesizing Few-Shot Knowledge into a Lightweight Segmentation Model" is now available: [Webpage](https://pasqualedem.github.io/DistillFSS/), [arXiv](https://arxiv.org/abs/2512.05613), [Code](https://github.com/pasqualedem/DistillFSS)
 - **[November 2025]** New preprint on Interpretable Few-Shot Segmentation: "Matching-Based Few-Shot Semantic Segmentation Models Are Interpretable by Design" is now available: [Webpage](https://pasqualedem.github.io/AffinityExplainer/), [arXiv](https://arxiv.org/abs/2511.18163), [Code](https://github.com/pasqualedem/AffinityExplainer)
 - **[September 2025]** I chaired the workshop ["Advances in Drone Vision"](https://cilabuniba.github.io/adv2025/) at ICIAP 2025.
 - **[August 2025]** We received the ["Outstanding Paper Award"](https://www.ifsa-nafips2025.org/) at IFSA-NAFIPS 2025 for our paper "Explainable Fuzzy GNNs for Leak Detection in Water Distribution Networks".
